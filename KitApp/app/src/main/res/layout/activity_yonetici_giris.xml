@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDD"
+    android:orientation="vertical"
+    tools:context=".activity.YoneticiGirisActivity">
+
+    <LinearLayout
+        android:id="@+id/yoneticiGirisPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/yoneticiGirisKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Kullanıcı Adı:"
+            android:maxLength="20"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/yoneticiGirisSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Şifre:"
+            android:maxLength="20"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/yoneticiGirisButonGiris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#197BED"
+            android:onClick="GirisYap"
+            android:text="Giriş Yap"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/yoneticiGirisYonetimEkran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#197BED"
+            android:onClick="uyeListesi"
+            android:text="Üye Listesi" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#DC9122"
+            android:onClick="kitapListesi"
+            android:text="Kitap Listesi" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:onClick="kitapEkle"
+            android:text="Kitap Ekle" />
+    </LinearLayout>
+
+
+</LinearLayout>

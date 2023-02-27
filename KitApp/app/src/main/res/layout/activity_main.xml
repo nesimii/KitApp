@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDCDDF"
+    tools:context=".activity.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" KitApp'a Hoşgeldiniz "
+            android:textColor="#292929"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Aradığınız Tüm Kitaplar Burada!\nTek Yapmanız Gereken Üye Olup\nKitapların Dünyasına Katılmak"
+            android:textAlignment="center"
+            android:textColor="#303030"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mainUyeKullaniciadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="65dp"
+            android:background="@color/white"
+            android:hint="Kullanıcı Adı"
+            android:maxLength="20"
+            android:textSize="25sp" />
+
+
+        <EditText
+            android:id="@+id/mainUyeSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="65dp"
+            android:background="@color/white"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#3DA332"
+            android:onClick="buttonUyeGirisi"
+            android:text="Giriş Yap"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#D1891E"
+            android:onClick="buttonYoneticiGirisi"
+            android:text="Yönetici Girişi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="KitApp' ı Kullanabilmek İçin Önce Üye Olmalısın\nAşağıdaki Butona Tıklayarak Üye Olabilirsin"
+            android:textAlignment="center"
+            android:textColor="#303030"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#2F36C1"
+            android:onClick="buttonUyeol"
+            android:text="Üye Ol"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

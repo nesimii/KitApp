@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E6E6"
+    tools:context=".activity.KitapEkleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/KitapEkleResimSec"
+                android:layout_width="169dp"
+                android:layout_height="300dp"
+                android:onClick="ImageViewresimSec"
+                android:scaleType="fitXY"
+                android:src="@drawable/kitapsec" />
+
+            <EditText
+                android:id="@+id/KitapEkleAdi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:hint="Kitap Adı"
+                android:maxLength="50"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/KitapEkleYazari"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:hint="Kitap Yazarı"
+                android:maxLength="50"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/KitapEkleKategori"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:spinnerMode="dialog"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/KitapEkleSayfaSayisi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="Sayfa Sayısı"
+                android:maxLength="4"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/KitapEkleBaskiSayisi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:hint="Baskı Sayısı"
+                android:maxLength="10"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/KitapEkleISBN"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:hint="ISBN"
+                android:maxLength="50"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/KitapEkleOzeti"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:hint="Kitap Özeti"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/buttonKitapEkle"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#4CAF50"
+                android:onClick="ButtonKitapKaydet"
+                android:text="Kaydet"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

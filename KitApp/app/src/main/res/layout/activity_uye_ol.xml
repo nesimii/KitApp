@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDD"
+    android:gravity="fill_vertical|center"
+    tools:context=".activity.UyeOlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#272727"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Üye Olmak İçin Aşağıdaki Bilgileri\nEksiksiz Doldurmalısın"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/uyeOlAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Ad"
+            android:maxLength="20"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uyeOlSoyadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Soyad"
+            android:maxLength="20"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uyeOlTelefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Telefon"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uyeOlKullaniciAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Kullanıcı Adı"
+            android:maxLength="20"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uyeOlSifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/uyeOlSifreTekrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white"
+            android:hint="Şifre Tekrar"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/uyeOlFavori1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/uyeOlFavori2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white" />
+
+        <Spinner
+            android:id="@+id/uyeOlFavori3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/white" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#197BED"
+            android:onClick="butonUyeKaydet"
+            android:text="Kayıt Ol"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

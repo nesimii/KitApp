@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <ImageView
+            android:id="@+id/kitapItemImageViewKitapResim"
+            android:layout_width="85dp"
+            android:layout_height="150dp"
+            android:layout_row="0"
+            android:layout_rowSpan="4"
+            android:layout_column="0"
+            android:background="#3F51B5" />
+
+        <TextView
+            android:id="@+id/kitapItemTextViewKitapAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="Kitap Adı"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kitapItemTextViewKitapYazari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginTop="3dp"
+            android:text="Yazarı"
+            android:textColor="#2E2E2E"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kitapItemTextViewKitapSayfaSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="3dp"
+            android:text="Sayfa Sayısı"
+            android:textColor="#2B2B2B"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kitapItemTextViewBaskiSayisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginTop="3dp"
+            android:text="Baskı"
+            android:textColor="#292929"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kitapItemTextViewKitapOzeti"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_vertical"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="merhaba burası kitap özeti"
+            android:textColor="#6E6E6E"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+</LinearLayout>
